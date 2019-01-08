@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img class="img" alt="Vue logo" src="./assets/Rock-paper-scissors.png">
+    <RockPaperScissors/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import RockPaperScissors from  './components/RockPaperScissors.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    RockPaperScissors
   }
 }
 </script>
@@ -24,5 +24,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: bisque;
 }
+
+.img{
+  width: 400px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  transition: width 1s;
+}
+
 </style>
